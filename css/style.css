@@ -1,9 +1,39 @@
 :root {
-    
+    --lightest-green: #14F074;
+    --light-green: #0C833D;
+    --mid-green: #063315;
+    --dark-green: #002B0D;
+    --darkest-green: #000000;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    font-family: VT323;
+    font-size: x-large;
+    color: var(--light-green);
+    background-color: var(--dark-green);
+}
+
+.name-plate {
+    background-color: var(--darkest-green);
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top: 2px solid var(--light-green);
+    margin: 10px auto;
+    text-align: center;
+    max-width: 400px;
 }
