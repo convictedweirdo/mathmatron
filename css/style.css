@@ -4,6 +4,26 @@
     --mid-green: #063315;
     --dark-green: #002B0D;
     --darkest-green: #000000;
+/* NORD */
+    --darkest-grey: #2E3440;
+    --dark-grey: #3B4252;
+    --grey: #434C5E;
+    --light-grey: #4C566A;
+
+    --dark-snow: #D8DEE9;
+    --snow: #E5E9F0;
+    --ligh-snow: #ECEFF4;
+
+    --dark-frost: #5E81AC;
+    --frost: #81A1C1;
+    --light-frost: #88C0D0;
+    --lightest-frost: #8FBCBB;
+
+    --aurora-red: #BF616A;
+    --aurora-orange: #D08770;
+    --aurora-yellow: #EBCB8B;
+    --aurora-green: #A3BE8C;
+    --aurora-purple: #B48EAD;
 }
 
 @font-face {
@@ -23,17 +43,36 @@
 body {
     font-family: VT323;
     font-size: x-large;
-    color: var(--light-green);
-    background-color: var(--dark-green);
+    color: var(--light-grey);
+    background-color: var(--light-grey);
 }
 
 .name-plate {
-    background-color: var(--darkest-green);
+    background-color: var(--dark-snow);  
     padding: 20px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    border-top: 2px solid var(--light-green);
-    margin: 10px auto;
+    border-top: 4px solid var(--dark-grey);
+    border-left: 4px solid var(--dark-grey);
+    border-right: 4px solid var(--dark-grey);
+    margin: auto;
+    margin-top: 30px;
     text-align: center;
     max-width: 400px;
+}
+
+.container {
+    border: 4px solid black;
+    height: 400px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.screen {
+    border: 4px solid black;
+    height: 700px;
+    flex: 1;
+    
 }
