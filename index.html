@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
     <title>MATHMATRON</title>
 </head>
 <body>
-    <h1 class="name-plate">MATHMATRON 9000</h1>
-    <div class="container">
-        <div class="screen"></div>
+    <div class="overlay">
+        <h1 class="name-plate">MATHMATRON 9000</h1>
+        <div class="container">
+            <div class="screen" id="screen">
+                <div class="box">
+                    <div class="question">
+                        <h2 id="question">GET RDY</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="countdown" >
+                        <h1 id="count-down">10</h1>
+                    </div>
+                </div>
+                <div class="box" class="buttons">
+                    <button class="button" id="button1">1</button>
+                    <button class="button" id="button2">2</button>
+                    <button class="button" id="button3">3</button>
+                </div>
+            </div>
+            <div class="start-screen" id="start-screen">
+                <button class="start-button" id="start-button">
+                    START
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

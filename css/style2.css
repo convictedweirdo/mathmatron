@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.name-plate {
+    border: 2px solid black;
+    background-color: grey;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    border-bottom: 0px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    min-height: 500px;
+    margin: auto;
+    padding: 10px;
+    max-width: 700px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    flex: 1;
+    padding: 15px;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.countdown {
+    
+}
+
+.box {
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    flex: 1;
+}
+
+button {
+    height: 50px;
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* .overlay {
+    position: fixed;
+    display: block;
+    z-index: 100;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+} */
+
+.start-screen {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+}
+
+button.start-button {
+    background-color: white;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+    flex: 1;
+}
+
+.hide {
+    display: none;
+}
