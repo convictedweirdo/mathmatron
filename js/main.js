@@ -1,4 +1,4 @@
-// import * as mfunc from "./functions.js";
+import * as mfunc from "./functions.js";
 
 /* INIT */
 const startScreen = document.getElementById("start-screen");
@@ -25,7 +25,7 @@ function countdown() {
     let timer = 11;
     let endTimer = 0;
 
-    timerId = setInterval(function() {
+    let timerId = setInterval(function() {
         timer--;
         // console.log(timer);
         countDown.textContent = `${timer}`;
@@ -72,12 +72,12 @@ function generateQuestion() {
     let rand = Math.floor(Math.random() * question.length);
     let currentQuestion = question[rand];
     // display question and reset timer
-    q = currentQuestion.questionAsked;
+    let q = currentQuestion.questionAsked;
     questionBox.textContent = q;
     rand = Math.floor(Math.random() * 3);
-    correctLocation = rand;
+    let correctLocation = rand;
     console.log(`the correct answer is on button number ${rand}`);
 }
 
-// console.log(mfunc.addup(3,3));
+console.log(mfunc.addup(3,3));
 
