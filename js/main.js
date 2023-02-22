@@ -1,3 +1,5 @@
+import { countdown, generateQuestion } from "./functions";
+
 /* INIT */
 startScreen = document.getElementById("start-screen");
 screen = document.getElementById("screen");
@@ -6,6 +8,8 @@ countDown = document.getElementById("count-down");
 questionBox = document.getElementById("question");
 
 /* Start Button - hide start screen and show main game */
+startButton = document.getElementById("start-button");
+
 startButton.addEventListener("click", function() {
     console.log("button clicked");
     startScreen.classList.add("hide");    
@@ -21,7 +25,7 @@ screen.classList.add("hide");
 function countdown() {
     let timer = 11;
     let endTimer = 0;
-    console.log("New timer started");
+
     timerId = setInterval(function() {
         timer--;
         // console.log(timer);
@@ -50,7 +54,8 @@ class questionList {
 let question = [];
 // input order: question, correct answer, first wrong answer, second wrong answer
 
-// for future use, consider adding multiple wrong answers, so wrong answers can be generated with more randomness
+// for future use, consider adding multiple wrong answers, 
+// so wrong answers can be generated with more randomness
 question[0] = new questionList("1 + 1?", "2", "1.5", "3");
 question[1] = new questionList("Which number is higher? 0, -10 or 5", "5", "-10", "0")
 question[2] = new questionList("How many sides does a triangle have?", "3", "2", "4");
