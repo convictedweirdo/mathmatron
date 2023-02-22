@@ -1,4 +1,5 @@
 import * as mfunc from "./functions.js";
+import * as classes from "./classes.js";
 
 /* INIT */
 const startScreen = document.getElementById("start-screen");
@@ -40,31 +41,22 @@ function countdown() {
     
 }
 
-class questionList {
-    constructor(questionAsked, correctAnswer, incorrectAnswer1, incorrectAnswer2) {
-        this.questionAsked = questionAsked;
-        this.correctAnswer = correctAnswer;
-        this.incorrectAnswer1 = incorrectAnswer1;
-        this.incorrectAnswer2 = incorrectAnswer2;
-    }
-}
-
 // question list 
 let question = [];
 // input order: question, correct answer, first wrong answer, second wrong answer
 
 // for future use, consider adding multiple wrong answers, 
 // so wrong answers can be generated with more randomness
-question[0] = new questionList("1 + 1?", "2", "1.5", "3");
-question[1] = new questionList("Which number is higher? 0, -10 or 5", "5", "-10", "0")
-question[2] = new questionList("How many sides does a triangle have?", "3", "2", "4");
-question[3] = new questionList("What is 3 x 6?", "18", "12", "16");
-question[4] = new questionList("What is (2 x 3) + 4?", "10", "8", "12");
-question[5] = new questionList("What is 4 + 4 x 2?", "12", "16", "10");
-question[6] = new questionList("If Y = 2, What is X? - Y + X = 5", "3", "2", "1.5");
-question[7] = new questionList("What is 7 - 3?", "4", "5", "3");
-question[8] = new questionList("What is 22 x 10?", "220", "222", "210");
-question[9] = new questionList("What is 3 divided by 1", "1", "3", "1.5");
+question[0] = new classes.questionList("1 + 1?", "2", "1.5", "3");
+question[1] = new classes.questionList("Which number is higher? 0, -10 or 5", "5", "-10", "0")
+question[2] = new classes.questionList("How many sides does a triangle have?", "3", "2", "4");
+question[3] = new classes.questionList("What is 3 x 6?", "18", "12", "16");
+question[4] = new classes.questionList("What is (2 x 3) + 4?", "10", "8", "12");
+question[5] = new classes.questionList("What is 4 + 4 x 2?", "12", "16", "10");
+question[6] = new classes.questionList("If Y = 2, What is X? - Y + X = 5", "3", "2", "1.5");
+question[7] = new classes.questionList("What is 7 - 3?", "4", "5", "3");
+question[8] = new classes.questionList("What is 22 x 10?", "220", "222", "210");
+question[9] = new classes.questionList("What is 3 divided by 1", "1", "3", "1.5");
 
 
 function generateQuestion() {
