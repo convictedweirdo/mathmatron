@@ -1,14 +1,13 @@
-import { countdown, generateQuestion } from "./functions";
+// import * as mfunc from "./functions.js";
 
 /* INIT */
-startScreen = document.getElementById("start-screen");
-screen = document.getElementById("screen");
-startButton = document.getElementById("start-button");
-countDown = document.getElementById("count-down");
-questionBox = document.getElementById("question");
+const startScreen = document.getElementById("start-screen");
+const screen = document.getElementById("screen");
+const startButton = document.getElementById("start-button");
+const countDown = document.getElementById("count-down");
+const questionBox = document.getElementById("question");
 
 /* Start Button - hide start screen and show main game */
-startButton = document.getElementById("start-button");
 
 startButton.addEventListener("click", function() {
     console.log("button clicked");
@@ -79,4 +78,6 @@ function generateQuestion() {
     correctLocation = rand;
     console.log(`the correct answer is on button number ${rand}`);
 }
+
+// console.log(mfunc.addup(3,3));
 
