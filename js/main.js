@@ -1,4 +1,4 @@
-import * as mfunc from "./functions.js";
+import * as stnd from "./functions.js";
 import * as classes from "./classes.js";
 
 /* INIT */
@@ -71,5 +71,15 @@ function generateQuestion() {
     console.log(`the correct answer is on button number ${rand}`);
 }
 
-console.log(mfunc.addup(3,3));
+
+
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
+console.log(stnd.randInRange(5,10));
 
